@@ -3,7 +3,7 @@ const populateGenreDropdown = (genres) => {
     const select = document.getElementById('genres')
 
     for (const genre of genres) {
-        let option = document.createElement('option');
+        let option = document.createElement("option");
         option.value = genre.id;
         option.text = genre.name;
         select.appendChild(option);
@@ -58,7 +58,7 @@ const createMoviePoster = (posterPath) => {
 //creates html for movie title
 const createMovieTitle = (title) => {
     const titleHeader = document.createElement('h1');
-    titleHeader = setAttribute('id', 'movieTitle');
+    titleHeader.setAttribute('id', 'movieTitle');
     titleHeader.innerHTML = title;
 
     return titleHeader;
